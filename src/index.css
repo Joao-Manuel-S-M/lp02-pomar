@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Lato:wght@300;400;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 96%;
+    --foreground: 30 10% 20%;
+
+    --card: 40 40% 98%;
+    --card-foreground: 30 10% 20%;
+
+    --popover: 40 40% 98%;
+    --popover-foreground: 30 10% 20%;
+
+    --primary: 120 35% 30%;
+    --primary-foreground: 40 33% 96%;
+
+    --secondary: 35 60% 50%;
+    --secondary-foreground: 40 33% 96%;
+
+    --muted: 40 20% 90%;
+    --muted-foreground: 30 10% 45%;
+
+    --accent: 120 30% 40%;
+    --accent-foreground: 40 33% 96%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 35 20% 85%;
+    --input: 35 20% 85%;
+    --ring: 120 35% 30%;
+
+    --radius: 0.5rem;
+
+    --cta: 120 50% 35%;
+    --cta-foreground: 0 0% 100%;
+    --cta-hover: 120 50% 30%;
+
+    --cream: 40 33% 96%;
+    --cream-dark: 35 30% 90%;
+    --earth: 30 40% 30%;
+    --gold: 42 80% 50%;
+    --gold-muted: 42 50% 65%;
+    --red-strike: 0 70% 50%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .btn-cta {
+    @apply bg-cta text-cta-foreground font-bold text-lg md:text-xl px-8 py-4 rounded-lg 
+           hover:bg-cta-hover transition-all duration-300 shadow-lg hover:shadow-xl 
+           hover:scale-105 active:scale-95;
+  }
+  .section-cream {
+    @apply bg-background;
+  }
+  .section-white {
+    @apply bg-card;
+  }
+  .price-strike {
+    @apply line-through text-red-strike font-bold;
+  }
+}
