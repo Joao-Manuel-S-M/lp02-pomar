@@ -4,7 +4,7 @@ import productBundle from "@/assets/product-bundle.png";
 const CTAButton = () => (
   <div className="flex flex-col items-center gap-2">
     <a
-      href="https://pay.kiwify.com.br/poZZHxV"
+      href="https://syncpagamentoseguro.com/checkout/a17116c4-2f48-4e6a-8aa1-457797d99ce5+a1711865-bd81-43ed-a746-cd39f02cc64b"
       target="_blank"
       rel="noopener noreferrer"
       className="btn-cta animate-pulse-cta inline-block text-center"
@@ -51,7 +51,7 @@ const HeroSection = () => (
               12x de R$ 3,23
             </p>
             <p className="text-lg text-muted-foreground mt-1">
-              ou <strong className="text-earth">R$ 27,90</strong> à vista
+              ou <strong className="text-earth">R$ 19,90</strong> à vista
             </p>
           </div>
           <CTAButton />
